@@ -15,10 +15,10 @@ area_ret = base_ * altura_
 ############ HTML
 title = "Retângulo"
 geo_funcs.print_header(title)
-print("<h1>Retângulo</h1><hr>")
+print("<h1>Retangulo</h1><hr>")
 print("<p>Base: {:.1f}".format(base_))
 print("<p>Altura: {:.1f}".format(altura_))
-print("<p>Área do retângulo: {:.1f}".format(area_ret))
+print("<p>Area do retângulo: {:.1f}".format(area_ret))
 print("<br><br>Clique <a href=\'../retangulo.html\'>aqui</a> para novo cálculo.")
 geo_funcs.print_footer()
 

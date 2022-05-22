@@ -14,9 +14,9 @@ area_circ = math.pi * math.pow(raio_, 2)
 ############ HTML
 title = "Círculo"
 geo_funcs.print_header(title)
-print("<h1>Círculo</h1><hr>")
+print("<h1>Circulo</h1><hr>")
 print("<p>Raio: {:.1f}".format(raio_))
-print("<p>Área do círculo: {:.1f}".format(area_circ))
+print("<p>Area do circulo: {:.1f}".format(area_circ))
 print("<br><br>Clique <a href=\'../circulo.html\'>aqui</a> para novo cálculo.")
 geo_funcs.print_footer()
 
