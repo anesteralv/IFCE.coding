@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo - Perímetro do Triângulo</title>
+    <style type="text/css">
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+div {
+        padding: 20px;
+        margin: 20px;
+    }
+    .textColor {
+        color: #B22222;
+        background-color: white;
+    }
+    .borderColor {
+        border-width: 3px;
+        border-style: solid;
+        border-color: #B22222;
+    }
+    .backgroundColor {
+        background-color: #B22222;
+        color: white;
+    }
+    .backgroundGradient {
+        background: linear-gradient(to bottom, white, #B22222);
+        color: white;
+    }
+
+    .lighterColor {
+        background: #C96464;
+    }
+    .darkerColor {
+        background: #7C1717;
+    }
+    .lighterColor > p,
+    .darkerColor > p {
+        color: black;
+        background: white;
+        padding: 3px;
+        border-radius: 3px;
+        display: inline-block;
+    }
+
+    </style>
+</head>
+<body>
+
+<h1>Perímetro do Triângulo</h1><hr>
+
+   <div class="textColor borderColor">
+    <p method="post" action="cgi-bin/per-triangulo.py">
+    <p Base <input name = "base" type="text"></p>
+    <p>Lado 1 <input name = "Lado1" type="text"></p>
+    <p>Lado 2 <input name = "Lado2" type="text"></p>
+    <input type="submit" value="Enviar">
+  </div>
+</form>
+<br></br>
+<a href="index.html">Início</a>
+</body>
+
+</html>
