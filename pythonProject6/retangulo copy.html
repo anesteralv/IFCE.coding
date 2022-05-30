@@ -2,19 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Círculo</title>
+    <title>Retângulo</title>
     <style>
-    .form-submit-button {
+        .form-submit-button {
 
-    background: #0066A2;
-    color: white;
-    border-style: outset;
-    border-color: white;
-    height: 40px;
-    width: 70px;
-    font: bold 15px georgia, sans-serif;
-    text-shadow:none; 
+background: #0066A2;
+color: white;
+border-style: outset;
+border-color: white;
+height: 40px;
+width: 70px;
+font: bold 15px georgia, sans-serif;
+text-shadow:none; 
 }
+
         body {
            margin: 0;
           font-family: Georgia, serif;
@@ -39,8 +40,6 @@
           text-align: center;
           gap: 20px;
          }
-
-
 
       ul {
     
@@ -69,20 +68,17 @@ li .mymenu:hover {
 
 .raio {
   width: 350px;
-  height: 100px;
+  height: 180px;
   margin: 100px 500px 200px;
   border: 3px solid white;
   font-family: 'georgia';
-  font-size:1.6em;
-  color: white;
+  font-size:1.4em;
 }
     </style>
 </head>
 <body>
-
-
-<div class="max-width">      
-<h1>Círculo</h1><hr>
+<div class="max-width">
+<h1>Retângulo</h1><hr>
 <ul>
     <li><a href="circulo.html" class="mymenu">Círculo</a></li>
     <li><a href="triangle.html" class="mymenu">Triângulo</a></li>
@@ -94,9 +90,10 @@ li .mymenu:hover {
 </ul>
 
 <div class="raio">
-    <form method="post" action="cgi-bin/circle.py">
+    <form method="post" action="cgi-bin/retangule.py">
     <p></p>
-    Raio <input name = "raio" type="text" size="10">
+    Base<input name = "base" type="text" size="10"><br/><br/>
+    Altura<input name = "altura" type="text" size="10"><br/><br/>
     <input type="submit" value="Enviar" class="form-submit-button">
 </form>
 <br></br>

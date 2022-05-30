@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <title>Círculo</title>
     <style>
-        
+    .form-submit-button {
+
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: white;
+    height: 40px;
+    width: 70px;
+    font: bold 15px georgia, sans-serif;
+    text-shadow:none; 
+}
         body {
            margin: 0;
           font-family: Georgia, serif;
+        }
+
+        .max-width {
+            background-image: url(teste4.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'georgia';
+            color: white;
+            width: 100vw;
+            height: 100vh;
+            margin: 0 auto;
+            padding: 5px;
+            text-align: center;
+            gap: 20px 50px;
         }
 
         .header {
@@ -15,6 +39,8 @@
           text-align: center;
           gap: 20px;
          }
+
+
 
       ul {
     
@@ -31,28 +57,31 @@ li .mymenu {
    font-family: 'georgia';
    font-size:1.6em;
    text-decoration: none;
-   color:#4c4c4c;
+   color: white;
    -webkit-border-box: 0 1px 0 0 #4c4c4c;
    border-bottom: 4px solid transparent;
    -webkit-transition: border-bottom .3s linear;
 }
 li .mymenu:hover {
     
-    border-bottom:4px solid #c93434;
+    border-bottom:4px solid white;
 }
 
 .raio {
   width: 350px;
   height: 100px;
-  margin: 100px 800px 200px;
-  border: 3px solid blue;
+  margin: 100px 500px 200px;
+  border: 3px solid white;
+  font-family: 'georgia';
+  font-size:1.6em;
+  color: white;
 }
     </style>
 </head>
 <body>
 
 
-<div class="header">      
+<div class="max-width">      
 <h1>Círculo</h1><hr>
 <ul>
     <li><a href="circulo.html" class="mymenu">Círculo</a></li>
@@ -61,18 +90,16 @@ li .mymenu:hover {
     <li><a href="trapezio.html" class="mymenu">Área do Trapézio</a></li>
     <li><a href="per-trapezio.html" class="mymenu">Perímetro do Trapézio</a></li>
     <li><a href="quadrado.html" class="mymenu">Quadrado</a></li>
-    <li><a href="retangulo.html" class="mymenu">Retangulo</a></li>
-  </ul>
+    <li><a href="retangulo.html" class="mymenu">Retângulo</a></li>
+</ul>
 
 <div class="raio">
     <form method="post" action="cgi-bin/circle.py">
-    Raio<input name = "raio" type="text">
-    <input type="submit" value="Enviar">
-
-
+    <p></p>
+    Raio <input name = "raio" type="text" size="10">
+    <input type="submit" value="Enviar" class="form-submit-button">
 </form>
 <br></br>
-<a href="index.html">Início</a>
 </body>
 
 </html>
