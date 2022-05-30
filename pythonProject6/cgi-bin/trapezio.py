@@ -1,0 +1,31 @@
+# C\\Users\\Alunos\\PycharmProject\\venv
+import cgitb, cgi
+import math
+import geo_funcs
+
+# habilita a visualização de erros
+cgitb.enable(display=0, logdir="./")
+# instancia um form para receber dados do navegador
+form = cgi.FieldStorage()
+################# logica do script
+# recebe o valor do raio do usuário
+baseMaior_ = float(form.getvalue('baseMaior'))
+baseMenor_ = float(form.getvalue('baseMenor'))
+altura_ = float(form.getvalue('altura'))
+# calcular area
+area_trap = ((baseMaior_ + baseMenor_) * altura_) / 2
+
+
+######### HTML
+
+title = "Trapézio"
+geo_funcs.print_header(title)
+
+print("<h1>Trapézio</h1><hr>")
+print("<p>Base Maior: {:.2f}".format(baseMaior_))
+print("<p>Base Menor: {:.2f}".format(baseMenor_))
+print("<p>Altura: {:.2f}".format(altura_))
+print("<p>Área do Trapézio: {:.1f}".format(area_trap))
+print("<br><br>Clique <a href=\'../trapezio.html\'>aqui </a> para novo cálculo.")
+print("<br><br>Clique <a href=\'../index.html\'>aqui </a> para voltar ao início.")
+geo_funcs.print_footer()

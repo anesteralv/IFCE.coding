@@ -9,21 +9,19 @@ cgitb.enable(display=0, logdir="./")
 form = cgi.FieldStorage()
 ################# logica do script
 # recebe o valor do raio do usuário
-raio_ = float(form.getvalue('raio'))
+base_ = float(form.getvalue('base'))
+altura_ = float(form.getvalue('altura'))
 # calcular area
-area_circ = math.pi * math.pow(raio_, 2)
-
-#calcular perímetro
-per_circ = 2 * math.pi * raio_
+area_tria = (base_ * altura_)/2
 ######### HTML
 
-title = "Círculo"
+title = "Triângulo"
 geo_funcs.print_header(title)
 
-print("<h1>Círculo</h1><hr>")
-print("<p>Raio: {:.1f}".format(raio_))
-print("<p>Perímetro do Círculo: {:.1f}".format(per_circ))
-print("<p>Área do Círculo: {:.1f}".format(area_circ))
-print("<br><br>Clique <a href=\'../circulo.html\'>aqui </a> para novo cálculo.")
+print("<h1>Triângulo</h1><hr>")
+print("<p>Base: {:.2f}".format(base_))
+print("<p>Altura: {:.2f}".format(altura_))
+print("<p>Área do Triângulo: {:.1f}".format(area_tria))
+print("<br><br>Clique <a href=\'../triangle.html\'>aqui </a> para novo cálculo.")
 print("<br><br>Clique <a href=\'../index.html\'>aqui </a> para voltar ao início.")
 geo_funcs.print_footer()
