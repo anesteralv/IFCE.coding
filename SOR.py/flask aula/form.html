@@ -1,0 +1,17 @@
+{% extends "base.html"  %}
+{% block title %}{{titulo}}{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .form {color: #336699}
+    </style>
+{% endblock %}
+{% block content %}
+    <h1>My form</h1><hr>
+    <form action="/form/data/" method="POST">
+        Name<input type="text" name="user">
+        email<input type="text" name="email">
+        <input type="submit" value="Send">
+    <p class="Form">Formulariozinho...</p>
+    </form>
+{% endblock %}
