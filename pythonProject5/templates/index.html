@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Medidas</title>
+    <style>
+        body {
+        background-color: darkslategray;
+        margin: 0;
+        font-family: Georgia, serif;
+        }
+        .central {
+        width: 350px;
+        height: 300px;
+        margin: 200px 780px 200px;
+        font-family: 'georgia';
+        font-size:1.6em;
+        color: whitesmoke;
+    }
+    .max-width {
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'georgia';
+        color: white;
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 5px;
+        text-align: center;
+        gap: 20px 50px;
+            }
+    </style>
+</head>
+<body>
+<div class="max-width">
+<h1>Conversor de Medidas</h1><hr>
+<form method="POST">
+    <div class="central">
+    <label>Escolha uma unidade:</label>
+        <select name="unidade">
+             <optgroup label="Temperatura">
+      <option value="F-C">Fahrenheit para Celsius</option>
+      <option value="C-F">Celsius para Fahrenheit</option>
+      <option value="K-C">Kelvin para Celsius</option>
+      <option value="C-K">Celsius para Kelvin</option>
+      <option value="K-F">Kelvin para Fahrenheit</option>
+      <option value="F-K">Fahrenheit para Kelvin</option>
+
+            </optgroup>
+     <optgroup label="Comprimento">
+      <option value="km-m">Quilômetro para metros</option>
+      <option value="km-cm">Quilômetro para centímetros</option>
+      <option value="m-cm">Metros para centímetros</option>
+      <option value="m-mm">Metros para milímetros</option>
+      <option value="m-km">Metros para quilômetros</option>
+      <option value="cm-m">Centímetros para metros</option>
+      <option value="cm-km">Centímetros para quilômetros</option>
+     </optgroup>
+            <optgroup label="Massa">
+      <option value="kg-g">Quilograma para grama</option>
+      <option value="g-kg">Grama para quilograma</option>
+      <option value="mg-kg">Miligrama para quilograma</option>
+      <option value="kg-mg">Quilograma para miligrama</option>
+      <option value="mg-g">Miligrama para grama</option>
+            </optgroup>
+    <input name="valor" size="10">
+    <input type="submit">
+</form>
+
+</body>
+</html>
